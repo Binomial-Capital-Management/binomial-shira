@@ -1,0 +1,45 @@
+[build-system]
+requires = []
+build-backend = "shira_build"
+backend-path = ["build_backend"]
+
+[project]
+name = "shira"
+version = "0.1.0"
+description = "Drop-in, faster scikit-learn, XGBoost, LightGBM and CatBoost."
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+# SHIRA is built and checked against exactly these versions of the stock libraries.
+dependencies = [
+    "numpy==2.4.2",
+    "scikit-learn==1.8.0",
+    "xgboost==3.2.0",
+    "lightgbm==4.6.0",
+    "catboost==1.2.10",
+    # imported directly by the Python layer; pinned to the versions the checks ran on
+    "scipy==1.15.3",
+    "joblib==1.5.3",
+]
+classifiers = [
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[tool.shira]
+python-dir = "src/python"
+packages = ["shira", "shira_cpp"]
+python-tag = "py313"
+license-files = ["LICENSE", "LICENSE-BINARY", "NOTICE",
+                 "third_party/scikit-learn-LICENSE.txt", "third_party/lightgbm-LICENSE.txt"]
+
+# One prebuilt, closed library per platform. The tag says what the library needs:
+# macOS 15 or later on Apple Silicon; the glibc of the Linux build machine on x86-64.
+[tool.shira.platforms.macos-arm64]
+library = "lib/macos-arm64/libshira.dylib"
+tag = "macosx_15_0_arm64"
+
+[tool.shira.platforms.linux-x86_64]
+library = "lib/linux-x86_64/libshira.so"
+tag = "manylinux_2_28_x86_64"

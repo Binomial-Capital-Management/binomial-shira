@@ -1,0 +1,58 @@
+SHIRA BINARY LICENCE
+Version 1.0, November 2026
+
+This licence covers the compiled SHIRA library ("the Library"): the file libshira.dylib or
+libshira.so that ships inside the SHIRA package. It does not cover the Python files of the
+package, which are licensed separately under the Apache License, Version 2.0 (see LICENSE).
+
+Copyright 2026 Binomial Technologies. All rights reserved.
+
+1. What you may do
+
+   You may, free of charge:
+   (a) install and run the Library, on any number of machines, for any purpose, including
+       commercial use, as part of the SHIRA package;
+   (b) copy and redistribute the Library unmodified, but only as part of an unmodified SHIRA
+       package and together with this licence.
+
+2. What you may not do
+
+   You may not:
+   (a) modify the Library, or create works derived from it;
+   (b) reverse engineer, decompile or disassemble the Library, or try by any other means to
+       obtain its source code, except where the law that applies to you gives you that right
+       and this licence cannot take it away;
+   (c) distribute the Library on its own, or as part of anything other than an unmodified
+       SHIRA package;
+   (d) remove or alter any copyright, licence or attribution notice in the Library or in
+       the package;
+   (e) sell, rent, lease or sublicense the Library itself.
+
+3. Ownership
+
+   The Library is licensed, not sold. Binomial Technologies keeps every right in the Library that this
+   licence does not expressly give you. No source code is provided and none is owed.
+
+4. No warranty
+
+   THE LIBRARY IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+   INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+   PURPOSE, ACCURACY OF RESULTS AND NON-INFRINGEMENT. YOU ARE RESPONSIBLE FOR CHECKING THAT ITS
+   RESULTS ARE FIT FOR YOUR USE.
+
+5. Limit of liability
+
+   TO THE FULLEST EXTENT THE LAW ALLOWS, BINOMIAL IS NOT LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE, ARISING FROM THE LIBRARY OR FROM ITS USE,
+   INCLUDING ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL LOSS, LOSS OF DATA OR
+   LOSS OF PROFIT.
+
+6. Ending
+
+   This licence ends automatically if you break any of its terms. When it ends you must stop
+   using the Library and delete every copy you hold. Sections 3, 4 and 5 continue to apply.
+
+7. Later versions
+
+   Binomial Technologies may publish later versions of the Library under different terms. The terms that
+   came with a copy continue to apply to that copy.

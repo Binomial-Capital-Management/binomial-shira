@@ -1,0 +1,33 @@
+SHIRA
+Copyright 2026 Binomial Technologies
+
+This package has two parts under two licences:
+
+  - the Python files (the shira and shira_cpp packages): Apache License, Version 2.0. See LICENSE.
+  - the compiled library (libshira.dylib / libshira.so): the SHIRA Binary Licence. See LICENSE-BINARY.
+
+SHIRA is an independent project. It is not affiliated with, sponsored by or endorsed by the
+projects named below, and their names are used only to say what SHIRA works with.
+
+SHIRA does not contain or redistribute these libraries. It is used together with them: pip
+installs each one from its own distribution, under its own licence. SHIRA's Python layer calls
+their public interfaces and follows their documented behaviour so that it can be used in their
+place.
+
+  scikit-learn    BSD 3-Clause License       Copyright (c) The scikit-learn developers
+                  https://scikit-learn.org   licence text: third_party/scikit-learn-LICENSE.txt
+
+  XGBoost         Apache License 2.0         Copyright (c) XGBoost contributors
+                  https://xgboost.ai         licence text: the same as LICENSE
+
+  LightGBM        MIT License                Copyright (c) Microsoft Corporation
+                  https://lightgbm.readthedocs.io   licence text: third_party/lightgbm-LICENSE.txt
+
+  CatBoost        Apache License 2.0         Copyright (c) Yandex LLC
+                  https://catboost.ai        licence text: the same as LICENSE
+
+SHIRA also uses NumPy (BSD 3-Clause License, Copyright (c) NumPy Developers) and SciPy
+(BSD 3-Clause License, Copyright (c) SciPy Developers), installed the same way.
+
+On macOS the compiled library links to Apple's Accelerate framework, which is part of the
+operating system.
